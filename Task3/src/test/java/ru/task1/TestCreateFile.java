@@ -19,7 +19,7 @@ public class TestCreateFile {
 
      Path path;
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun =true )
     public void createTempDir() throws IOException {
         Path tempPath = Paths.get("src");
         this.path = Files.createTempDirectory(tempPath, "tmp");
@@ -29,7 +29,7 @@ public class TestCreateFile {
 
     }
 
-    @AfterMethod(enabled = true)
+    @AfterMethod(enabled = true, alwaysRun =true )
     public void deleteTempDir(){
         try{
             FileUtils.deleteDirectory(new File(path.toString()));
@@ -42,7 +42,7 @@ public class TestCreateFile {
 
     }
 
-    @Test
+    @Test (groups ="positive" )
     public void createFileTest() {
        File f = new File(this.path.toString()+"\\test.txt");
         try {
@@ -52,7 +52,7 @@ public class TestCreateFile {
         }
     }
 
-    @Test
+    @Test(groups = "positive")
     public void weirdLegalname() {
         File f = new File(this.path.toString()+"\\~!a.@");
         try {
@@ -63,7 +63,7 @@ public class TestCreateFile {
     }
 
 
-    @Test
+    @Test(groups = {"positive", "smoke"})
     public void testEmpty() throws IOException {
         File f = new File(this.path.toString()+"\\test1.txt");
         f.createNewFile();
@@ -71,13 +71,13 @@ public class TestCreateFile {
 
     }
 
-    @Test
+    @Test(groups = "negative")
     public void negativeTest1() throws IOException {
         File file = new File(this.path.toString()+"\\.");
         assert(!file.createNewFile());
 
     }
-    @Test
+    @Test (groups = {"negative","broken"})
     public void negativeTest2() {
 
         File file = new File(this.path.toString() + "\\:?d.txt");

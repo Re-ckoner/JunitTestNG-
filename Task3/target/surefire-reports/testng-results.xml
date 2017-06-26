@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite1" duration-ms="91" started-at="2017-06-25T15:51:18Z" finished-at="2017-06-25T15:51:18Z">
+    <groups>
+    </groups>
+    <test name="Test2" duration-ms="91" started-at="2017-06-25T15:51:18Z" finished-at="2017-06-25T15:51:18Z">
+      <class name="ru.task1.TestCreateFile">
+        <test-method status="PASS" signature="createTempDir()[pri:0, instance:ru.task1.TestCreateFile@3f2a3a5]" name="createTempDir" is-config="true" duration-ms="10" started-at="2017-06-25T18:51:18Z" finished-at="2017-06-25T18:51:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTempDir -->
+        <test-method status="PASS" signature="createFileTest()[pri:0, instance:ru.task1.TestCreateFile@3f2a3a5]" name="createFileTest" duration-ms="13" started-at="2017-06-25T18:51:18Z" finished-at="2017-06-25T18:51:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createFileTest -->
+        <test-method status="PASS" signature="deleteTempDir()[pri:0, instance:ru.task1.TestCreateFile@3f2a3a5]" name="deleteTempDir" is-config="true" duration-ms="18" started-at="2017-06-25T18:51:18Z" finished-at="2017-06-25T18:51:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTempDir -->
+        <test-method status="PASS" signature="createTempDir()[pri:0, instance:ru.task1.TestCreateFile@3f2a3a5]" name="createTempDir" is-config="true" duration-ms="1" started-at="2017-06-25T18:51:18Z" finished-at="2017-06-25T18:51:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTempDir -->
+        <test-method status="PASS" signature="negativeTest1()[pri:0, instance:ru.task1.TestCreateFile@3f2a3a5]" name="negativeTest1" duration-ms="1" started-at="2017-06-25T18:51:18Z" finished-at="2017-06-25T18:51:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negativeTest1 -->
+        <test-method status="PASS" signature="deleteTempDir()[pri:0, instance:ru.task1.TestCreateFile@3f2a3a5]" name="deleteTempDir" is-config="true" duration-ms="1" started-at="2017-06-25T18:51:18Z" finished-at="2017-06-25T18:51:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTempDir -->
+        <test-method status="PASS" signature="createTempDir()[pri:0, instance:ru.task1.TestCreateFile@3f2a3a5]" name="createTempDir" is-config="true" duration-ms="1" started-at="2017-06-25T18:51:18Z" finished-at="2017-06-25T18:51:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTempDir -->
+        <test-method status="PASS" signature="negativeTest2()[pri:0, instance:ru.task1.TestCreateFile@3f2a3a5]" name="negativeTest2" duration-ms="1" started-at="2017-06-25T18:51:18Z" finished-at="2017-06-25T18:51:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negativeTest2 -->
+        <test-method status="PASS" signature="deleteTempDir()[pri:0, instance:ru.task1.TestCreateFile@3f2a3a5]" name="deleteTempDir" is-config="true" duration-ms="2" started-at="2017-06-25T18:51:18Z" finished-at="2017-06-25T18:51:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTempDir -->
+        <test-method status="PASS" signature="createTempDir()[pri:0, instance:ru.task1.TestCreateFile@3f2a3a5]" name="createTempDir" is-config="true" duration-ms="0" started-at="2017-06-25T18:51:18Z" finished-at="2017-06-25T18:51:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTempDir -->
+        <test-method status="PASS" signature="testEmpty()[pri:0, instance:ru.task1.TestCreateFile@3f2a3a5]" name="testEmpty" duration-ms="1" started-at="2017-06-25T18:51:18Z" finished-at="2017-06-25T18:51:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmpty -->
+        <test-method status="PASS" signature="deleteTempDir()[pri:0, instance:ru.task1.TestCreateFile@3f2a3a5]" name="deleteTempDir" is-config="true" duration-ms="3" started-at="2017-06-25T18:51:18Z" finished-at="2017-06-25T18:51:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTempDir -->
+        <test-method status="PASS" signature="createTempDir()[pri:0, instance:ru.task1.TestCreateFile@3f2a3a5]" name="createTempDir" is-config="true" duration-ms="1" started-at="2017-06-25T18:51:18Z" finished-at="2017-06-25T18:51:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTempDir -->
+        <test-method status="PASS" signature="weirdLegalname()[pri:0, instance:ru.task1.TestCreateFile@3f2a3a5]" name="weirdLegalname" duration-ms="1" started-at="2017-06-25T18:51:18Z" finished-at="2017-06-25T18:51:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- weirdLegalname -->
+        <test-method status="PASS" signature="deleteTempDir()[pri:0, instance:ru.task1.TestCreateFile@3f2a3a5]" name="deleteTempDir" is-config="true" duration-ms="3" started-at="2017-06-25T18:51:18Z" finished-at="2017-06-25T18:51:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTempDir -->
+      </class> <!-- ru.task1.TestCreateFile -->
+      <class name="ru.task1.TestNGMock">
+        <test-method status="PASS" signature="negativeMock()[pri:0, instance:ru.task1.TestNGMock@26ba2a48]" name="negativeMock" duration-ms="0" started-at="2017-06-25T18:51:18Z" finished-at="2017-06-25T18:51:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negativeMock -->
+        <test-method status="PASS" signature="positiveMock()[pri:0, instance:ru.task1.TestNGMock@26ba2a48]" name="positiveMock" duration-ms="1" started-at="2017-06-25T18:51:18Z" finished-at="2017-06-25T18:51:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- positiveMock -->
+      </class> <!-- ru.task1.TestNGMock -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite1 -->
+</testng-results>
