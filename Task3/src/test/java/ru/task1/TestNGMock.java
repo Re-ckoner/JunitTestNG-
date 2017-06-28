@@ -1,7 +1,6 @@
 package ru.task1;
 
-import org.apache.xalan.xsltc.compiler.util.Type;
-import org.apache.xpath.operations.String;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 /**
@@ -15,6 +14,6 @@ public class TestNGMock {
     @Test(groups = "negative")
     public void negativeMock(){
         Integer n = 1;
-        assert(!(n.getClass().isPrimitive()));
+        Assert.assertTrue(!(n.getClass().isPrimitive()));
     }
 }
