@@ -1,6 +1,7 @@
 package ru.task1;
 
 import org.apache.commons.io.FileUtils;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -43,23 +44,20 @@ public class TestCreateFile {
     }
 
     @Test (groups ="positive" )
-    public void createFileTest() {
+    public void createFileTest() throws IOException
+    {
        File f = new File(this.path.toString()+"\\test.txt");
-        try {
-            f.createNewFile();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+       f.createNewFile();
+       Assert.assertTrue(f.exists());
+
     }
 
     @Test(groups = "positive")
-    public void weirdLegalname() {
+    public void weirdLegalname() throws IOException
+    {
         File f = new File(this.path.toString()+"\\~!a.@");
-        try {
-            f.createNewFile();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        f.createNewFile();
+        Assert.assertTrue(f.exists());
     }
 
 
@@ -67,14 +65,16 @@ public class TestCreateFile {
     public void testEmpty() throws IOException {
         File f = new File(this.path.toString()+"\\test1.txt");
         f.createNewFile();
-        assert(f.length()==0);
+        Assert.assertEquals(f.length(),0);
 
     }
 
     @Test(groups = "negative")
     public void negativeTest1() throws IOException {
         File file = new File(this.path.toString()+"\\.");
-        assert(!file.createNewFile());
+        Assert.assertTrue(!file.createNewFile());
+        Assert.assertTrue(!file.exists());
+
 
     }
     @Test (groups = {"negative","broken"})
@@ -82,11 +82,11 @@ public class TestCreateFile {
 
         File file = new File(this.path.toString() + "\\:?d.txt");
         try {
-             file.createNewFile();
-             assert(false);
+             Assert.assertTrue(file.createNewFile());
+
         }
         catch (Exception e){
-           assert(true);
+           Assert.fail("File was not created( custom message, test is failing on purpose)");
         }
 
     }
