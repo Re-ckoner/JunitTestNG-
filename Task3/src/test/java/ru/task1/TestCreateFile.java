@@ -43,7 +43,7 @@ public class TestCreateFile {
 
     }
 
-    @Test (groups ="positive" )
+    @Test (groups ="positive")
     public void createFileTest() throws IOException
     {
        File f = new File(this.path.toString()+"\\test.txt");
@@ -56,7 +56,7 @@ public class TestCreateFile {
     public void weirdLegalname() throws IOException
     {
         File f = new File(this.path.toString()+"\\~!a.@");
-        f.createNewFile();
+        Assert.assertTrue(f.createNewFile());
         Assert.assertTrue(f.exists());
     }
 
@@ -64,7 +64,8 @@ public class TestCreateFile {
     @Test(groups = {"positive", "smoke"})
     public void testEmpty() throws IOException {
         File f = new File(this.path.toString()+"\\test1.txt");
-        f.createNewFile();
+        Assert.assertTrue(f.createNewFile());
+        Assert.assertTrue(f.exists());
         Assert.assertEquals(f.length(),0);
 
     }
