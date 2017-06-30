@@ -26,7 +26,7 @@ public class DataProviders
     @DataProvider
     public static Iterator<Object[]> nameFromFile() throws IOException {
         BufferedReader in = new BufferedReader(new InputStreamReader(
-                DataProviders.class.getResourceAsStream("src//names.csv")));
+                DataProviders.class.getResourceAsStream("/names.txt")));
 
         List<Object[]> userData = new ArrayList<Object[]>();
         String line = in.readLine();

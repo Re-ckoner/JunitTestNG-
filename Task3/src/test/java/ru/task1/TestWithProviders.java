@@ -51,12 +51,13 @@ public class TestWithProviders
         System.out.println(f.toString() +"1created successfully");
     }
 
-    @Test(dataProviderClass = DataProviders.class, dataProvider = "nameFromFile")
-    public void test2(String fname) throws IOException{
-        File f = new File(this.path.toString()+"\\"+fname);
-        f.createNewFile();
-        Assert.assertTrue(f.exists());
-        System.out.println(f.toString() +"2created successfully");
-    }
+       @Test(dataProviderClass = DataProviders.class, dataProvider = "nameFromFile")
+       public void test22(String fname) throws IOException{
+         File f = new File(this.path.toString()+"\\"+fname);
+         f.createNewFile();
+         Assert.assertTrue(f.exists());
+         System.out.println(f.toString() +"2created successfully");
+       }
+
 
 }
